@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#nav_bar {
+    font-family: 'Racing Sans One', sans-serif;
+}
+
+h2{
+    font-weight: bold;
+}
+
+body{
+    background: lightgrey;
+    font-family: 'Source Code Pro', sans-serif;
+}
+
+#penn{
+    font-family: 'Protest Strike', sans-serif;
+}
+
+#penn_logo{
+    width: 500px;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn-with-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-with-image img {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-text {
+    z-index: 1;
+    position: relative;
+}
