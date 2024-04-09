@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Logo Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Bootstrap Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -10,197 +13,236 @@
     <!-- CSS Link -->
     <link rel="stylesheet" type="text/css" href="./index.css">
 
-	<title>Penn - Full-Stack Web Developer</title>
-
+    <title>Penn - Full-Stack Web Developer</title>
 </head>
 <body>
 
-	<!-- Navbar Start -->
-		<div>
-		    <nav class="navbar bg-secondary fixed-top" id="nav_bar">
-		        <div class="container-fluid d-flex justify-content-between">
-		            <button type="nav-button" class="bg-secondary border-0 btn btn-primary btn-with-image">
-		                <a class="text-light p-2" href="#landing"><img src="images/FFU.png" alt="Scroll to #landing"></a>
-		            </button>
-		            <ul class="navbar-nav d-flex flex-row">
-		                <li class="nav-item">
-		                    <button type="nav-button" class="bg-secondary border-light rounded">
-		                        <a class="text-light p-2" href="#projects">Projects</a>
-		                    </button>
-		                </li>
-		                <li class="nav-item">
-		                    <button type="nav-button" class="bg-secondary border-light rounded mx-2">
-		                        <a class="text-light p-2" href="#tools">Tools</a>
-		                    </button>
-		                </li>
-		                <li class="nav-item">
-		                    <button type="nav-button" class="bg-secondary border-light rounded">
-		                        <a class="text-light p-2" href="#contact">Contact</a>
-		                    </button>
-		                </li>
-		            </ul>
-		        </div>
-		    </nav>
-		</div>
-	<!-- Navbar End -->
+    <!-- Navbar Start -->
+    <nav id="nav_bar" class="navbar navbar-expand-lg bg-secondary fixed-top">
+      <div class="container-fluid">
+        <button type="button" class="bg-secondary border-0 btn btn-primary btn-with-image">
+            <a class="text-light p-2" href="#Home"><img src="images/FFU.png" alt="Scroll to #landing"></a>
+        </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="text-dark p-2" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-dark p-2" href="#Project">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-dark p-2" href="#Tools">Tools</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-dark p-2" href="#Experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-dark p-2" href="#Education">Education</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
 
-		<!-- Section Landing Start -->
-		<section id="landing">
-			<div class="text-dark min-vh-100 pt-5">
-				<div class="container">
-				<div class="row">
+    <div class="container"> <!-- Use a Bootstrap container to contain your content -->
 
-				<!-- Content Column Start -->
-				<div class="col-12 col-md-6 order-md-first order-last mt-5 pt-5">
-				    <div class="container-fluid col-md-8 mt-md-5 pt-md-5">
-				        <h1 class="text-center py-2" id="penn">Penn</h1>
-				        <h3 class="text-center py-2">Full-Stack Web Developer</h3>
-				        <p class="text-center py-2">My Name is Fennimore Urbe. Graduate of Bachelor of Science in Information Technology. I'm from Baguio City, PH. If you need help with your website needs, Click the "Contact Button" or scroll down to check my Projects.</p>
-				    </div> 
-				</div>		
-				<!-- Content Column End -->
+        <!-- Section Home Start -->
+        <section id="Home" class="ms-4 mt-4">
+            <div class="text-dark pt-5">
+                <div class="d-flex align-items-center">
+                    <img class="img-fluid me-3" src="images/FFU.png" id="penn_logo" alt="Fennimore Urbe">
+                    <h1 class="py-2" id="penn">Penn</h1>
+                </div>
+                <div class="d-flex align-items-center mt-2">
+                    <a class="fa fa-mobile text-dark mx-3" href="tel:+639669141914" target="_blank" title="Contact Number: +639669141914"></a> 
+                    <a class="fa fa-envelope text-dark me-3" href="mailto:fen.urbe@gmail.com" target="_blank" title="Email: fen.urbe@gmail.com"></a>  
+                    <a class="fa fa-facebook text-dark me-3" href="https://www.facebook.com/PnnRB" target="_blank" title="Facebook"></a>
+                    <a class="fa fa-linkedin text-dark me-3" href="https://www.linkedin.com/in/fennurbe" target="_blank" title="LinkedIn"></a> 
+                    <a class="fa fa-github text-dark" href="https://github.com/FenUrbe" target="_blank" title="GitHub"></a> 
+                </div>
+            </div>
+        </section>
+        <!-- Section Home End -->
 
-				<!-- Image Columns Start -->
-				<div class="container-fluid col-12 col-md-6 order-md-last order-first mt-5 pt-5">
-					<div class="align-items-center me-md-5">
-						<img class="img-fluid" src="images/FFU.png" id="penn_logo">
-					</div>
-				</div>
-				<!-- Image Column End -->
+        <!-- Section About Start -->
+        <section id="About" class="ms-4 mt-5 pt-5">
+            <div class="text-dark">
+                <h2 class="py-2" id="about">About</h2>
+                <p class="px-3">Greetings! I'm <strong>Fennimore Urbe</strong>, an IT graduate from Baguio City, Philippines. With a solid foundation in Information Technology, I thrive on innovation and problem-solving. Let's collaborate and drive meaningful change through technology. Welcome to my portfolio!</p>
+            </div>
+        </section>
+        <!-- Section About End -->
 
-				</div>
-				</div>
-			</div>
-		</section>
-		<!-- Section Landing End -->
+        <!-- Section Project Start -->
+        <section id="Project" class="ms-md-4 mt-md-5 pt-5">
+            <div class="text-dark">
+                <h2 class="py-2" id="project">Project</h2>
+                <div class="row px-3">
+                    <div class="col-lg-6 order-lg-2">
+                        <img class="img-fluid me-md-3 mb-3 mb-md-0" src="images/ECommerceAPI.png" id="project_img" alt="Project Image">
+                    </div>
+                    <div class="col-lg-6 pt-3 order-lg-1">
+                        <h3><a class="text-dark" href="https://frontend-lake-psi.vercel.app/" target="_blank">ECommerce Website<i class="fa fa-external-link ms-3"></i></a></h3>
+                        <p class="px-md-3">Simple ECommerce website created to highlight basic features commonly seen in online shopping platforms. It includes functions like user login, product management, cart handling, order processing, and more. Explore the various endpoints designed to make shopping online easier for users.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section Project End -->
 
-		<!-- Section Project Start -->
-		<section id="projects">
-			<div class="min-vh-100 bg-secondary pt-5">
-				<h2 class="text-center">Projects</h2>
-				<div class="d-flex justify-content-center">
-					<div class="d-md-flex justify-content-center">
-						<div class="rounded p-4 text-light bg-dark m-2">
-			                <img src="images/s12.png" class="img-fluid">
-			                <h3 class="mt-4">Session 12 Project</h3>
-			                <p class="mt-4">Bootstrap Introduction and Simple Styles</p>
-		            	</div> 
-			            <div class="rounded p-4 text-light bg-dark m-2">
-			                <img src="images/s13.png" class="img-fluid">
-			                <h3 class="mt-4">Session 13 Project</h3>
-			                <p class="mt-4">Bootstrap Grid System</p>
-			            </div>
-		        		<div class="rounded p-4 text-light bg-dark m-2">
-			                <img src="images/s14.png" class="img-fluid">
-			                <h3 class="mt-4">Session 14 Project</h3>
-			                <p class="mt-4">CSS and Bootstrap Flex</p>
-			            </div>
-		            	<div class="rounded p-4 text-light bg-dark m-2">
-			                <img src="images/s15.png" class="img-fluid">
-			                <h3 class="mt-4">Session 15 Project</h3>
-			                <p class="mt-4">Boostrap - Layout and Best Practices</p>
-		            	</div>
-	            		<div class="rounded p-4 text-light bg-dark m-2">
-			                <img src="images/s16.png" class="img-fluid">
-			                <h3 class="mt-4">Session 16 Project</h3>
-			                <p class="mt-4">Practice Portfolio</p>
-		            	</div>
-		            </div>
-				</div>
-			</div>
-		</section>
-		<!-- Section Project End -->
+        <!-- Section Tools Start -->
+        <section id="Tools" class="ms-4 mt-5 pt-5">
+            <div class="text-dark">
+                <h2 class="py-2" id="tools">Tools</h2>
+                <div>
+                    <h3 class="d-flex justify-content-center">Core Tools</h3>
+                    <div id="core-tools" class="d-flex flex-column justify-content-center">
+                        <div id="html" class="d-flex flex-column align-items-center">
+                            <img width="150" src="images/logo-html5.png" />
+                            <span>HTML5</span>
+                        </div>
+                        <div id="css-js" class="d-flex justify-content-center">
+                            <div class="d-flex flex-column align-items-center">
+                                <img width="150" src="images/logo-css3.png" />
+                                <span>CSS3</span>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <img width="150" src="images/logo-javascript.png" />
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-center mt-3">Other Tools</h3>
+                    <div class="d-flex flex-md-column justify-content-center" id="other-tools">
+                        <div class="d-md-flex justify-content-center" id="tools-1">
+                            <div class="d-flex flex-column align-items-center">
+                                <img width="150" src="images/logo-mongodb.png" />
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <img width="150" src="images/logo-nodejs.png" />
+                                <span>Node.js</span>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <img width="150" src="images/logo-expressjs.png" />
+                                <span>Express.js</span>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <img width="150" src="images/logo-react.png" />
+                                <span>React</span>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <img width="150" src="images/logo-bootstrap.png" />
+                                <span>Bootstrap</span>
+                            </div>
+                        </div>
+                        <div class="d-md-flex justify-content-center" id="tools-2">
+                            <div class="d-flex flex-column align-items-center">
+                                <img width="150" src="images/logo-git.png" />
+                                <span>Git</span>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <img width="150" src="images/logo-sublime-text-3.png" />
+                                <span>Sublime Text</span>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <img width="150" src="images/logo-postman.png" />
+                                <span>Postman</span>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <img width="150" src="images/logo-gitlab.png" />
+                                <span>GitLab</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section Tools End -->
 
-		<!-- Section Tools Start -->
-		<section id="tools">
-			<div class="pt-5 min-vh-100">
-				<h2 class="text-center">Tools</h2>
+        <!-- Section Experience Start -->
+        <section id="Experience" class="ms-4 mt-5 pt-5">
+            <div class="text-dark">
+                <h2 class="py-2" id="experience">Experience</h2>
+                <hr class="my-4">
+                <div class="row">
+                    <div class="col-md-3">
+                        <p class="px-3">2022-2023</p>
+                    </div>
+                    <div class="col-md-9">
+                        <p class="px-3">Fraud Analyst</p>
+                        <p class="px-3">Concentrix Corporation | Baguio City</p>
+                        <p class="px-3">Identified suspicious activities and transactions on customer accounts and handled accordingly.</p>
+                    </div>
+                </div>
+                <hr class="my-4"> <!-- Horizontal divider -->
+                <div class="row">
+                    <div class="col-md-3">
+                        <p class="px-3">2018-2019</p>
+                    </div>
+                    <div class="col-md-9">
+                        <p class="px-3">Customer Service Representative</p>
+                        <p class="px-3">Sitel Ph Corporation | Baguio City</p>
+                        <p class="px-3">Assisted customers with their money transfer concerns and other inquiries.</p>
+                    </div>
+                </div>
+                <hr class="my-4"> <!-- Horizontal divider -->
+                <div class="row">
+                    <div class="col-md-3">
+                        <p class="px-3">2016-2017</p>
+                    </div>
+                    <div class="col-md-9">
+                        <p class="px-3">Production Specialist</p>
+                        <p class="px-3">Texas Instruments Philippines | Baguio City</p>
+                        <p class="px-3">Handled and operate different machines which test different kinds of Integrated Circuits.</p>
+                    </div>
+                </div>
+                <hr class="my-4">
+            </div>
+        </section>
 
-				<div class="d-flex justify-content-center pt-5">
-				 	<div class="d-md-flex justify-content-center">
-				 		<figure class="img-container">
-		                    <img src="images/logo-html5.png" alt="Image" class="img-fluid">
-		                    <figcaption class="img-caption text-center">HTML 5</figcaption>
-               			 </figure>
-               			 <figure class="img-container">
-		                    <img src="images/logo-css3.png" alt="Image" class="img-fluid">
-		                    <figcaption class="img-caption text-center">CSS 3</figcaption>
-               			 </figure>
-				 	</div>
-				 	<div class="d-md-flex justify-content-center">
-				 		<figure class="img-container">
-		                    <img src="images/logo-zuittgit.png" alt="Image" class="img-fluid">
-		                    <figcaption class="img-caption text-center">Zuitt Git</figcaption>
-               			 </figure>
-               			 <figure class="img-container">
-		                    <img src="images/logo-sublime-text-3.png" alt="Image" class="img-fluid">
-		                    <figcaption class="img-caption text-center">Sublime Text 3</figcaption>
-               			 </figure>
-				  	</div>
-				</div>
+        <!-- Section Experience End -->
 
-			</div>
-		</section>
-		<!-- Section Tools End -->
+        <!-- Section Education Start -->
+        <section id="Education" class="ms-4 my-5 pt-5">            
+            <div class="text-dark">
+                <h2 class="py-2" id="education">Education</h2>
+                <div class="row">
+                	<hr class="my-4">
+                    <div class="col-md-3">
+                        <p class="px-3">2024</p>
+                    </div>
+                    <div class="col-md-9">
+                        <p class="px-3">Zuitt Web Developer Program</p>
+                        <p class="px-3">Main Course Package (MERN) - Full-stack Web Development</p>
+                    </div>
+                    <hr class="my-4">
+                    <div class="col-md-3">
+                        <p class="px-3">2015</p>
+                    </div>
+                    <div class="col-md-9">
+                        <p class="px-3">Data Center College of the Philippines</p>
+                        <p class="px-3">Bachelor of Science in Information Technology</p>
+                    </div>
+                    <hr class="my-4">
+                </div>
+            </div>
+        </section>
+        <!-- Section Education End -->
 
-		<!-- Section Contact Start -->
-		<section id="contact">
-			<div class="bg-secondary pt-5 min-vh-100">
-				<h2 class="text-center">Contact Me</h2>
-				<div class="container-fluid" id="contact-section">
-					<div class="row mt-3 d-flex justify-content-center">
-						<div class="col-12 col-md-8 col-xl-4 bg-dark">
-						
-						<!-- Form Start -->
-						<form id="form-col" action="https://c8.alamy.com/comp/2E48462/submitted-text-written-on-red-round-vintage-rubber-stamp-2E48462.jpg">
-						 	<div class="form-group">
-							<label for="InputName">Name</label>
-						    <input type="name" class="form-control" id="InputName" placeholder="Your Name">
-						  
-						 	<div class="form-group">
-							<label for="exampleInputEmail1">Email Address</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="name@example.com">
-							</div>
-						  
-						  	<div class="form-group">
-						    <label for="InputContact">Contact Number</label>
-						    <input type="contact" class="form-control" id="InputContact" placeholder="+63 900 000 0000">
-						  	</div>
-						
-							<div class="form-group">
-						    <label for="SelectConcern">Concern</label>
-						    <select class="form-control" id="SelectConcern">
-						    	<option>Quotation</option>
-						    </select>
-						  	</div>
-						 	
-						 	<div class="form-group">
-						    <label for="TextArea">Message</label>
-						    <textarea class="form-control" id="TextArea" rows="3"></textarea>
-							</div>
-						  
-						 	<button type="submit" class="btn btn-light bg-dark text-light my-3">Send Email
-							</button>
+    </div> <!-- End of Bootstrap container -->
 
-							<button type="reset" class="btn btn-light bg-dark text-light my-3">Reset
-							</button>
+    <footer class="d-flex justify-content-center fixed-bottom bg-secondary d-grid gap-3 mb-">
+        <div>Fennimore Urbe</div>
+        <div>|</div>
+        <div>Copyright 2024</div>
+    </footer>
 
-						</form>
-						<!-- Form End -->
-						</div>
-					</div>
-				</div>   
-			</div> 
-		</section>
-		<!-- Section Contact End -->
-
-	<footer class="d-flex justify-content-center d-grid gap-3 m-2">
-			<div>Fennimore Urbe</div>
-			<div>|</div>
-			<div>Terms of Use</div>
-			<div>|</div>
-			<div>Copyright 2024</div>
-		</footer>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
